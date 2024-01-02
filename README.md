@@ -1,5 +1,9 @@
+## Introduction:
+- I have cloned a 🤗 space and added changes to run on mac locally with [`mps`](https://developer.apple.com/documentation/metalperformanceshaders) backend.
+- or even in a GoogleColab.
+
 ---
-title: Shap-E
+title: Shap-E-AI
 emoji: 🧢
 colorFrom: yellow
 colorTo: blue
@@ -15,4 +19,4 @@ duplicated_from: hysts/Shap-E
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
 
-https://arxiv.org/abs/2305.02463
+OG Paper: https://arxiv.org/abs/2305.02463
