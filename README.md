@@ -12,7 +12,7 @@ duplicated_from: hysts/Shap-E
 ---
 
 ## Introduction:
-- I have cloned a 🤗 space and added changes to run on mac locally with [`mps`](https://developer.apple.com/documentation/metalperformanceshaders) backend.
+- I have cloned a [🤗 space](https://huggingface.co/spaces/dickpun499/Shap-E) and added changes to run on mac locally with [`mps`](https://developer.apple.com/documentation/metalperformanceshaders) backend.
 - or even in a  <a target="_blank" href="https://colab.research.google.com/github/c2p-cmd/shap-e-ai/blob/master/Shap_E.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
