@@ -50,7 +50,7 @@ def create_pan_cameras(size: int,
 # Copied from https://github.com/openai/shap-e/blob/8625e7c15526d8510a2292f92165979268d0e945/shap_e/util/notebooks.py#LL64C1-L76C33
 @torch.no_grad()
 def decode_latent_mesh(
-    xm: Transmitter | VectorDecoder,
+    xm: Transmitter,
     latent: torch.Tensor,
 ) -> TorchMesh:
     decoded = xm.renderer.render_views(
@@ -65,8 +65,12 @@ def decode_latent_mesh(
 
 class Model:
     def __init__(self):
-        self.device = torch.device(
-            'cuda' if torch.cuda.is_available() else 'cpu')
+        if torch.cuda.is_available():
+            self.device = torch.device("cuda")
+        elif torch.backends.mps.is_available():
+            self.device = torch.device("mps")
+        else:
+            self.device = torch.device("cpu")
         self.xm = load_model('transmitter', device=self.device)
         self.diffusion = diffusion_from_config(load_config('diffusion'))
         self.model_text = None
