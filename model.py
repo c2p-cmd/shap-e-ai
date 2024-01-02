@@ -50,7 +50,7 @@ def create_pan_cameras(size: int,
 # Copied from https://github.com/openai/shap-e/blob/8625e7c15526d8510a2292f92165979268d0e945/shap_e/util/notebooks.py#LL64C1-L76C33
 @torch.no_grad()
 def decode_latent_mesh(
-    xm: Transmitter,
+    xm: Transmitter | VectorDecoder,
     latent: torch.Tensor,
 ) -> TorchMesh:
     decoded = xm.renderer.render_views(
