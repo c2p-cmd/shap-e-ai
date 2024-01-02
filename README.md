@@ -13,7 +13,9 @@ duplicated_from: hysts/Shap-E
 
 ## Introduction:
 - I have cloned a 🤗 space and added changes to run on mac locally with [`mps`](https://developer.apple.com/documentation/metalperformanceshaders) backend.
-- or even in a GoogleColab.
+- or even in a  <a target="_blank" href="https://colab.research.google.com/github/c2p-cmd/shap-e-ai/blob/master/Shap_E.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
 
